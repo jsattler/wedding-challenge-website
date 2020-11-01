@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  color: #465A73
+}
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: rgba(250, 100, 200, 0.5) !important;
+  color: white !important;
+}
+
+.mat-step-text-label {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 3em;
+  color: #465A73
+}

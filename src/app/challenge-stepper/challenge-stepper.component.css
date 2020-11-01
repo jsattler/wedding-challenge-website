@@ -1,0 +1,30 @@
+.mat-stepper-vertical {
+  margin-top: 8px;
+}
+
+.mat-form-field {
+  margin-top: 16px;
+}
+
+.challenge-wrapper{
+  display: grid;
+  grid-template-areas: "header" "stepper";
+  grid-gap: 1em;
+}
+
+.challenge-header {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas: ". center .";
+  grid-area: header;
+}
+
+.challenge-stepper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: ". center .";
+  grid-area: stepper;
+}
+
+

@@ -1,0 +1,59 @@
+<div class="challenge-wrapper">
+
+  <div class="challenge-header">
+    <div class="left"></div>
+    <div class="center">
+      <hr>
+      <h1 style="font-size: 3.5em">Welcome to Your Wedding Challenge</h1>
+      <p style="font-size: 3em">Great to see you here! You have to complete all of the following challenges to get to
+        your final wedding gift. Have
+        fun and enjoy life!</p>
+    </div>
+  </div>
+  <div class="right"></div>
+
+  <div class="challenge-stepper">
+    <div class="left"></div>
+    <div class="center">
+
+      <mat-vertical-stepper linear="true" selectedIndex="0" #stepper>
+        <ng-template matStepperIcon="done">
+          <mat-icon>done</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="edit">
+          <mat-icon>done</mat-icon>
+        </ng-template>
+
+        <mat-step>
+          <ng-template matStepLabel>Cook Some Good ole' German Food</ng-template>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>Go For A Long Walk</ng-template>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>Go For A Drink in Tiffany's Favorite Bar</ng-template>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>Quiz Time</ng-template>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>Jug A Cold And Tasty Krombacher</ng-template>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>Write A Letter For Your Future Self</ng-template>
+        </mat-step>
+
+
+      </mat-vertical-stepper>
+    </div>
+    <div class="right"></div>
+  </div>
+</div>
+
+
+
