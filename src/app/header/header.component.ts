@@ -8,17 +8,22 @@ import {interval} from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
 
-  private marriedDate = new Date(2020, 9, 7, 16, 0, 0, 0);
+  private marriedDate = new Date(2020, 10, 7, 16, 0, 0, 0);
+  headerText = 'Married Since';
   days = 0;
   hours = 0;
   minutes = 0;
   seconds = 0;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
 
     interval(1000).subscribe(() => {
+      if (new Date() < this.marriedDate) {
+        this.headerText = 'Married In';
+      }
       let diff = Math.abs(Date.now() - this.marriedDate.getTime()) / 1000 ;
       this.days = Math.floor(diff / 86400);
       diff -= this.days * 86400;

@@ -22,3 +22,9 @@ img {
 .app-toolbar {
   font-family: 'Amatic SC', cursive;
 }
+
+@media only screen and (max-width: 857px){
+  #married-since {
+    display: none;
+  }
+}
