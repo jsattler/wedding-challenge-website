@@ -1,8 +1,8 @@
 .header-image{
   background-image: url("src/assets/images/tiffany-levi-sunset.jpg");
   /* Add the blur effect */
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  /*filter: blur(5px);
+  -webkit-filter: blur(5px);*/
 
   /* Full height */
   height: 80%;
@@ -11,28 +11,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .header-text {
-  /*background-color: rgb(0,0,0); !* Fallback color *!
-  background-color: rgba(0,0,0, 0.4); !* Black w/opacity/see-through *!*/
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
-  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
-  padding: 20px;
+  width: 100%;
   text-align: center;
+
 }
 
 h1{
   font-size: 6em;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 h2 {
-  font-size: 4em;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 3em;
 }
