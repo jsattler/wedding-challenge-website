@@ -8,7 +8,8 @@ import {interval} from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
 
-  private marriedDate = new Date(2020, 10, 7, 16, 0, 0, 0);
+  // private marriedDate = new Date(Date.UTC(2020, 10, 7, 16, 0, 0, 0));
+  private marriedDate = new Date('2020-11-07T16:00:00.000-05:00');
   headerText = 'Married Since';
   days = 0;
   hours = 0;
