@@ -21,7 +21,7 @@
   background-color: rgba(0,0,0, 0.4); !* Black w/opacity/see-through *!*/
   color: white;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -31,10 +31,21 @@
 }
 
 h1{
-  font-size: 6em;
+  font-size: 5em;
   letter-spacing: 30px;
 }
 
 h2 {
   font-size: 3.5em;
+}
+
+@media only screen and (max-width: 857px){
+  h1 {
+    font-size: 3em;
+    letter-spacing: normal;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
 }

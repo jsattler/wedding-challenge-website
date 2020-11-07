@@ -27,4 +27,9 @@ img {
   #married-since {
     display: none;
   }
+  img {
+    height: 56px;
+  }
 }
+
+
