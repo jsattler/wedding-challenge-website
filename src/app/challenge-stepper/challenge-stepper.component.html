@@ -24,8 +24,9 @@
           <mat-icon>done</mat-icon>
         </ng-template>
 
-        <mat-step>
+        <mat-step [completed]="false">
           <ng-template matStepLabel>Cook Some Good ole' German Food</ng-template>
+          <p>To solve this challenge you have to cook some German food (maybe some Jager Schnitzel with fries) together. The challenge is solved if you present us a picture of your meal. Have fun and enjoy cooking!</p>
         </mat-step>
 
         <mat-step>
