@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
 
     interval(1000).subscribe(() => {
       if (new Date() < this.marriedDate) {
-        this.headerText = 'Married In';
+        this.headerText = 'Wedding Counter';
       }
       let diff = Math.abs(Date.now() - this.marriedDate.getTime()) / 1000 ;
       this.days = Math.floor(diff / 86400);
