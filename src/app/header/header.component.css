@@ -1,27 +1,21 @@
 .header-image{
-  background-image: url("src/assets/images/tiffany-levi-sunset.jpg");
   /* Add the blur effect */
   /*filter: blur(5px);
   -webkit-filter: blur(5px);*/
 
   /* Full height */
 
-  height: 80%;
-
   /* Center and scale the image nicely */
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-
-
+  height: 40%;
+  background: url("src/assets/images/tiffany-levi-sunset.jpg") no-repeat fixed center top;
+  background-size: 100%;
 }
 .header-text {
 /*  background-color: rgb(0,0,0); !* Fallback color *!
   background-color: rgba(0,0,0, 0.4); !* Black w/opacity/see-through *!*/
   color: white;
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -31,15 +25,15 @@
 }
 
 h1{
-  font-size: 5em;
+  font-size: 4em;
   letter-spacing: 30px;
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
-@media only screen and (max-width: 857px){
+@media only screen and (max-width: 1560px){
   h1 {
     font-size: 3em;
     letter-spacing: normal;
@@ -47,5 +41,32 @@ h2 {
 
   h2 {
     font-size: 2em;
+  }
+
+
+  .header-image{
+    /* Add the blur effect */
+    /*filter: blur(5px);
+    -webkit-filter: blur(5px);*/
+
+    /* Full height */
+
+    /* Center and scale the image nicely */
+    height: 50%;
+    background: url("src/assets/images/tiffany-levi-sunset.jpg") no-repeat fixed center bottom;
+    background-size: cover;
+  }
+  .header-text {
+    /*  background-color: rgb(0,0,0); !* Fallback color *!
+      background-color: rgba(0,0,0, 0.4); !* Black w/opacity/see-through *!*/
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    text-align: center;
+
   }
 }
