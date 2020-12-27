@@ -16,7 +16,7 @@
     <div class="left"></div>
     <div class="center">
 
-      <mat-vertical-stepper linear="true" selectedIndex="0" #stepper>
+      <mat-vertical-stepper linear="true" selectedIndex="1" #stepper>
         <ng-template matStepperIcon="done">
           <mat-icon>done</mat-icon>
         </ng-template>
@@ -24,17 +24,21 @@
           <mat-icon>done</mat-icon>
         </ng-template>
 
-        <mat-step [completed]="false">
+        <mat-step [completed]="true">
           <ng-template matStepLabel>Cook Some Good ole' German Food</ng-template>
           <p>To solve this challenge you have to cook some German food (maybe some Jager Schnitzel with fries) together. The challenge is solved if you present us a picture of your meal. Have fun and enjoy cooking!</p>
-        </mat-step>
-
-        <mat-step>
-          <ng-template matStepLabel>Take a Break from Life</ng-template>
+          <div>
+            <img src="../../assets/images/challenge-1-solved.jpeg" alt="challenge-1-solved">
+          </div>
         </mat-step>
 
         <mat-step>
           <ng-template matStepLabel>Floating in Memories</ng-template>
+        <p>Go back to Amsterdam on the 31st of December 2018. Find out the name and coordinates of the bar where we played cards together. Solved when you provide the coordinates and name. If you need a hint contact us.</p>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>Take a Break from Life</ng-template>
         </mat-step>
 
         <mat-step>
