@@ -16,7 +16,7 @@
     <div class="left"></div>
     <div class="center">
 
-      <mat-vertical-stepper linear="true" selectedIndex="1" #stepper>
+      <mat-vertical-stepper linear="true" selectedIndex="3" #stepper>
         <ng-template matStepperIcon="done">
           <mat-icon>done</mat-icon>
         </ng-template>
@@ -36,17 +36,21 @@
           <ng-template matStepLabel>Floating in Memories</ng-template>
         <p>Go back to Amsterdam on the 31st of December 2018. Find out the name and coordinates of the bar where we played cards together. Solved when you provide the coordinates and name. If you need a hint contact us.</p>
           <div>
-            <img src="../../assets/images/challenge-2-solved.png" alt="challenge-1-solved">
+            <img src="../../assets/images/challenge-2-solved.png" alt="challenge-2-solved">
+          </div>
+        </mat-step>
+
+        <mat-step [completed]="true">
+          <ng-template matStepLabel>Take a Break from Life</ng-template>
+          <p>Take a long walk at the beach (at least four miles). It is solved when you send a picture of you two walking at the beach (track the walk if possible). Equip yourself with some wine and crackers.</p>
+          <div>
+            <img style="border-radius: 20px" src="../../assets/images/challenge-3-solved.jpg" alt="challenge-3-solved">
           </div>
         </mat-step>
 
         <mat-step [completed]="false">
-          <ng-template matStepLabel>Take a Break from Life</ng-template>
-          <p>Take a long walk at the beach (at least four miles). It is solved when you send a picture of you two walking at the beach (track the walk if possible). Equip yourself with some wine and crackers.</p>
-        </mat-step>
-
-        <mat-step>
           <ng-template matStepLabel>This One Is For Levi</ng-template>
+          <p>Jug a beer (possibly alcohol free) together. Solved when you provide a video or picture of you two with proof 🍺</p>
         </mat-step>
 
         <mat-step>
